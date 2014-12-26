@@ -18,7 +18,8 @@ m - number of edges.
 Then, there are m descriptions of edges, each consisting
 of two integers - source and destination vertex numbers.
 Note that after sending input the program is still interactive
-- you can for example press 'S' key to save a screenshot
+- you can for example press 'S' key to save a screenshot or
+move vertices with your mouse.
 
 Example usage:
 ./draw_graph.py -d <<< "5 3
