@@ -1,0 +1,28 @@
+This program is used to draw mathematical graphs.
+Usage:
+./draw_graph.py [-d] [-h] [-o] [-s filename.jpg]
+Flags:
+-d
+	use directed graphs (default: non-directed)
+-h
+	show this help
+-o
+	index vertices from one (default: zero-indexing)
+-s filename.jpg
+	 save graph image as filename.jpg
+
+The program reads from stdin input in the following form:
+First, two integers 'n' and 'm', where:
+n - number of vertices,
+m - number of edges.
+Then, there are m descriptions of edges, each consisting
+of two integers - source and destination vertex numbers.
+Note that after sending input the program is still interactive
+- you can for example press 'S' key to save a screenshot
+
+Example usage:
+./draw_graph.py -d <<< "5 3
+1 2
+1 4
+4 0"
+
